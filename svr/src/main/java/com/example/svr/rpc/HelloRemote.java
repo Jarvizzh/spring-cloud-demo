@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * Date: 2018/7/15
  */
 @FeignClient(name = "test-client")
-public interface HelloRomote {
+public interface HelloRemote {
 
     @GetMapping("/feign")
     public String hello(@RequestParam("param") String param);

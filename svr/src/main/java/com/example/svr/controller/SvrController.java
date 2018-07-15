@@ -1,6 +1,6 @@
 package com.example.svr.controller;
 
-import com.example.svr.rpc.HelloRomote;
+import com.example.svr.rpc.HelloRemote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class SvrController {
 
     @Autowired
-    HelloRomote helloRomote;
+    HelloRemote helloRemote;
 
     @GetMapping("/rpc/{name}")
     public String testRPC(@PathVariable String name){
-        return helloRomote.hello(name);
+        return helloRemote.hello(name);
     }
 
     @GetMapping("/svr")
