@@ -7,4 +7,4 @@ eureka:
       defaultZone: http://localhost:8888/eureka/
 spring:
   application:
-    name: test-cli
+    name: test-client
